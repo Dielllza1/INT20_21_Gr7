@@ -1,0 +1,97 @@
+body{
+	background-image: url("unnamed.png");
+	background-size: 1380px 700px;
+}
+#form{
+	background: #3a0909;
+	margin-top: 1%;
+	margin-right: 3%;
+	width: 325px;
+	height: 650px;
+	opacity: 0.8;
+	float: right;
+	overflow: scroll;
+}
+#bar{
+	border-bottom: 2px solid white;
+	width: 966px;
+	height: 100px;
+	float: top;
+	float: left;
+
+}
+.submit{
+	margin-top: 10%;
+	width: 282px;
+	height: 40px;
+}
+#s_btn{
+	outline: none;
+	background: none;
+	color: #ccc;
+	width: 282px;
+	height: 40px;
+	border: 1px solid #e28d26;
+	font-size: 18pt;
+	border-radius: 20px;
+	transition: .6s;
+	overflow: hidden;
+}
+#members{
+	margin-left: 1%;
+	text-align: left;
+	font-size: 11pt;
+}
+#Advance{
+	margin-left: 4%;
+}
+#logo{
+	margin-left: 15%;
+	width: 200px;
+	height: 150px;
+}
+
+#welcome{
+	width: 300px;
+	height: 100px;
+	margin-top: 5%;
+	color: white;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 16pt;
+	border-top: 2px solid white;
+	padding-top: 10%;
+}
+
+#about{
+	width: 270px;
+	height: 150px;
+	color: white;
+	text-align: center;
+	font-family: calibri;
+	font-size: 12pt;
+	margin-left: 5%;
+	font-style: italic;
+}
+
+#reserve{
+	width: 300px;
+	height: 600px;
+	color: white;
+	margin-left: 2%;
+	font-family: sans-serif;
+	font-size: 16pt;
+}
+
+#home{
+	float: left;
+	width: 100px;
+	height: 50px;
+	text-align: center;
+	color: white;
+	font-family: calibri;
+	font-size: 18pt;
+	margin-top: 5%;
+	margin-left: 5%;
+	opacity: 0.9;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="short icon" type="image/png" href="log.png">
+</head>
+<body>
+    <div id="bar">
+		<div id="home" style="color: red; font-family: calibri; font-size: 18pt; text-align: center;"><label>HOME</label></div>
+    </div>
+    
+		<div id="form">
+			<div><img id="logo" src="log.png" alt="Logo"></div>
+			<div id="welcome"><label>WELCOME!</label></div>
+			<div id="about"><label>We are providing fresh fast food on 50% discount, which cares your health as well as money. There is no compromise in Taste which makes you happy and healthy. All the foods are halal here.</label></div>
+			<div id="reserve">
+				<label><u><p style="text-align: center;">RESERVATIONS</p></u><br></label>
+				Name: <input id="name" type="text" name="name">
+				Date: <input type="date" name="Date">
+				Time: <input type="Time" name="Time"><br>
+				Event: <select name="Event">
+					<option value="Birthday" selected="selected">Birthday</option>
+					<option value="Reception">Reception</option>
+					<option value="Wedding">Wedding</option>
+					<option value="Other">Other</option>
+				</select><br>
+				Members:<input id="members" type="text" name="Members">
+				Advance:<select id="Advance" name="Advance">
+					<option>10$</option>
+					<option>100$</option>
+					<option>1000$</option>
+					<option>10000$</option>
+					<option>100000$</option>
+				</select>
+				<br>
+				<div class="submit">
+					<button id="s_btn" type="button">SUBMIT</button>
+				</div>
+			</div>
+        </div>
+    </body>
+    </html>
