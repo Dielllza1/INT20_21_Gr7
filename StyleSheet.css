@@ -1,0 +1,96 @@
+BODY {
+    background-image: url(background.jpg);
+    background-size: 1600px 2000px;
+}
+
+#header {
+    background: rgba(231, 225, 225,0.9);
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 5px;
+    
+}
+header a {
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 100%;
+    font-weight: bold;
+    margin: 5px 20px;
+}
+#drinks {
+    background-color: #e7e1e1;
+    width: 150px;
+    height: 35px;
+    border-radius: 50px;
+    vertical-align: central;
+    margin: 10px 680px;
+    opacity: 0.9;
+}
+
+#hotdrinks {
+    background: #e7e1e1;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 10%;
+    width: 320px;
+    height: 320px;
+    opacity: 0.9;
+    float: left;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#colddrinks {
+    background: #e7e1e1;
+    margin-top: 5%;
+    margin-left: 18%;
+    margin-right: 10%;
+    width: 320px;
+    height: 450px;
+    opacity: 0.9;
+    float: left;
+    overflow:auto;
+    border-radius: 10px;
+}
+#wines {
+    background: #e7e1e1;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 10%;
+    width: 320px;
+    height: 500px;
+    opacity: 0.9;
+    float: left;
+    overflow:unset;
+    border-radius: 10px;
+}
+#beers {
+    background: #e7e1e1;
+    margin-top: 10%;
+    margin-left: 18%;
+    margin-right: 10%;
+    width: 320px;
+    height: 320px;
+    opacity: 0.9;
+    float: left;
+    overflow: hidden;
+    border-radius: 10px;
+}
+ /*#footer {
+    width: 100%;
+    height: 25px;
+    min-height: 25px;
+    background: #878a8e;
+    border-top: 2px dotted #021C28;
+    position:all;
+    bottom: 0;
+}
+
+#footer p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 70%;
+}
+*/
