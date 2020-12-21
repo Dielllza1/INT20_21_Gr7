@@ -95,3 +95,16 @@ body{
 	margin-left: 5%;
 	opacity: 0.9;
 }
+
+.photo {
+    background:#3a0909;
+    margin-top: 7%;
+    margin-left: 7%;
+    margin-right: 5%;
+    width: 900px;
+    height: 400px;
+    opacity: 0.9;
+    float: left;
+    overflow: hidden;
+    border-radius: 10px;
+}
