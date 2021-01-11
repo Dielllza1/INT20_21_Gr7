@@ -1,0 +1,205 @@
+<html>
+<head>
+  <title>Online Order</title>
+
+</head>
+<!--BODY -->
+<body bgcolor="#E29638" text="white"></body>
+  <h1 align="center"><u>The name of the restaurant</u></h1>
+
+  <table align="center">
+    <tr>
+      <td valign="bottom"><img src="foods.jpg" width=250 height=250> </td>
+      <td valign="bottom"><img src="desserts.jpg" width=250 height=250></td>
+      <td valign="bottom"><img src="drinks.jpg" width=250 height=250></td>
+    </tr>
+    <tr>
+      <td ><h3 align="center">Food</h3></td>
+      <td><h3 align="center">Desserts</h3></td>
+      <td><h3 align="center">Drinks</h3></td>
+    </tr>
+  </table>
+  <!--DIV -->
+  <div style="width:80%; margin:auto;">
+  
+  <!--FORM -->
+    <form method="post" name="forms" action="form-processing.php" >
+  
+  <!--PERSONAL INFORMATION -->
+          <fieldset>
+          <legend>Personal Information</legend>
+        <label>  First Name:</label> <input type="text" name="fname" size=15/>
+          <label>Last Name:</label> <input type="text" name="lname" size=15/>
+         
+          <label>Mobile #:</label> <input type="text" name="mobile" size=15 />
+          <label>Address:</label> <input type="text" name="Address:" size=15 />
+        
+        </fieldset>
+    
+    
+    <!--ORDER DETAILS -->
+        <fieldset>
+          <legend>Order Details</legend>
+          <select name="Quantity" >
+      <option >Select Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+          </select>
+     <label>Delivery Date:</label><input type="date" name="date" />
+      <label>Delivery Time:</label><input type="time" name="time" />
+       <select name="payment">
+            <option>Select Payment Option</option>
+            <option value="1">Bank Transfer</option>
+            <option value="2">Cash on Delivery</option>
+          </select>
+        </fieldset>
+        
+    <!--Soft drinks -->
+        <fieldset>
+          <legend>Soft drinks</legend>
+          <input type="checkbox" name="Soft drinks" value="1" />
+          <select name="Mineral Water">
+            <option>Mineral Water </option>
+            <option value="1">Still</option>
+            <option value="2">Sparkling</option>
+          <input type="checkbox" name="Soft drinks" value="3" />Cola
+          <input type="checkbox" name="Soft drinks" value="4" />Fanta
+          <input type="checkbox" name="Soft drinks" value="5" />Lemonade
+          <input type="checkbox" name="Soft drinks" value="6" />Tonic
+         <input type="checkbox" name="Soft drinks" value="7" />Soda
+         <input type="checkbox" name="Soft drinks" value="7" /> 
+            <select name="Fruit Juice">
+            <option>Fruit Juice </option>
+            <option value="1">Cranberry</option>
+            <option value="2">Strawberry</option>
+            <option value="3">Apple</option>
+            <option value="4">Pomegranate</option>
+            <option value="5">Orange</option>
+          </select>
+        </fieldset>
+    
+    <!--Beers and Ciders -->
+        <fieldset>
+          <legend>Beers and Ciders</legend>
+          <input type="checkbox" name="Beers and Ciders" value="1" />
+          <select name="Beers">
+            <option>Beers </option>
+            <option value="1">Castle</option>
+            <option value="2">Black Label</option>
+            <option value="3">Amstel</option>
+            <option value="4">Windhoek Light</option>
+            <option value="5">Windhoek Lager</option>
+          </select>
+          <input type="checkbox" name="Beers and Ciders" value="2" />
+          <select name="Ciders">
+            <option>Ciders </option>
+            <option value="1">Savannah</option>
+          </select>
+    </fieldset>
+    
+    <!--Wines -->
+    <fieldset>
+          <legend>Wines</legend>
+          <input type="checkbox" name="Wines" value="1" />
+          <select name="White Wine">
+          <option>White Wine </option>
+            <option value="1">Jade Mountain White Blend</option>
+            <option value="2">Dr Loosen Reisling</option>
+            <option value="3">O'Reilly Pinot Gris</option>
+          </select>
+          <input type="checkbox" name="Wines" value="2" />
+          <select name="Red Wine">
+          <option>Red Wine </option>
+            <option value="1">Alexander Valley Vineyard</option>
+            <option value="2">Rosemblum Zinfandel</option>
+            <option value="3">Picket Fence</option>
+          </select>
+          <input type="checkbox" name="Wines" value="3" />
+          <select name="Rose Wine">
+          <option>Rose Wine </option>
+            <option value="1">Mimosa</option>
+            <option value="2">Bloody Mary</option>
+            <option value="3">Philips Head</option>
+          </select>
+        </fieldset>
+
+
+        <!--Spirits -->
+        <fieldset>
+          <legend>Spirits</legend>
+          <input type="checkbox" name="Spirits" value="1" />
+          <select name="Whiskey">
+          <option>Whiskey </option>
+            <option value="1">J&B</option>
+            <option value="2">Bells</option>
+          </select>
+          <input type="checkbox" name="Spirits" value="2" />
+          <select name="Brandy">
+          <option>Brandy </option>
+            <option value="1">Klipdrift</option>
+            <option value="2">Wellington</option>
+          </select>
+          <input type="checkbox" name="Spirits" value="3" />
+          <select name="White spirits">
+          <option>White spirits </option>
+            <option value="1">Gin</option>
+            <option value="2">Vodka</option>
+          </select>
+          <input type="checkbox" name="Spirits" value="4" />
+          <select name="Rum">
+          <option>Rum </option>
+            <option value="1">Southern Comfort, Campari</option>
+            <option value="2">Campari</option>
+          </select>
+        </fieldset>
+      
+      <!--Desserts -->
+      
+       <fieldset>
+          <legend>Desserts</legend>
+            <input type="checkbox" name="Desserts" value="1" /> Mango Cheescake
+            <input type="checkbox" name="Desserts" value="2" /> Banoffee Cheescake
+            <input type="checkbox" name="Desserts" value="4" /> Vegan Cheescake
+            <input type="checkbox" name="Desserts" value="5" /> Chocolate Cheescake
+            <input type="checkbox" name="Desserts" value="6" /> Lampone Pavlova
+            <input type="checkbox" name="Desserts" value="7" /> Crêpes
+            <input type="checkbox" name="Desserts" value="8" /> Pancakes
+            <input type="checkbox" name="Desserts" value="9" /> Pumpkin Spice Waffles
+            <input type="checkbox" name="Desserts" value="10" />Coffe Crème Brûlèe
+            <input type="checkbox" name="Desserts" value="11" />Chocolate tart
+            <input type="checkbox" name="Desserts" value="12" />Chocolate Fondant
+            <input type="checkbox" name="Desserts" value="13" />Chocolate Truffles
+            <input type="checkbox" name="Desserts" value="14" />Petit Fours
+            <input type="checkbox" name="Desserts" value="15" />Lemon Madeleines
+          
+        </fieldset>
+    
+    <!--SPECIAL INSTRUCTIONS -->
+    
+        <fieldset>
+          <legend>Special Instructions</legend>
+          <textarea name="instructions" rows="3" cols="42"></textarea>
+        </fieldset>
+    
+    <!--BUTTONS -->
+    
+        <input type="submit" value="PLACE YOUR ORDER" />
+        <input type="reset" value="START OVER" />
+      </div>
+      
+       
+    
+  </form>
+  
+</body>
+
+</html>
+
