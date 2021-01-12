@@ -1,17 +1,18 @@
-<html>
+<hmtl>
 <head>
   <title>Online Order</title>
 
 </head>
 <!--BODY -->
+
 <body bgcolor="#E29638" text="white"></body>
   <h1 align="center"><u>The name of the restaurant</u></h1>
 
   <table align="center">
     <tr>
-      <td valign="bottom"><img src="foods.jpg" width=250 height=250> </td>
-      <td valign="bottom"><img src="desserts.jpg" width=250 height=250></td>
-      <td valign="bottom"><img src="drinks.jpg" width=250 height=250></td>
+      <td valign="bottom"><img src="foods.jpg" width=200 height=200> </td>
+      <td valign="bottom"><img src="desserts.jpg" width=200 height=200></td>
+      <td valign="bottom"><img src="drinks.jpg" width=200 height=200></td>
     </tr>
     <tr>
       <td ><h3 align="center">Food</h3></td>
@@ -26,24 +27,21 @@
     <form method="post" name="forms" action="form-processing.php" >
   
   <!--PERSONAL INFORMATION -->
-          <fieldset>
-          <legend>Personal Information</legend>
-        <label>  First Name:</label> <input type="text" name="fname" size=15/>
-          <label>Last Name:</label> <input type="text" name="lname" size=15/>
-         
-          <label>Mobile #:</label> <input type="text" name="mobile" size=15 />
-          <label>Address:</label> <input type="text" name="Address:" size=15 />
-        
-        </fieldset>
-    
+       <fieldset>
+       <legend>Personal Information</legend>
+       <label>  First Name:</label> <input type="text" name="fname" size=15/>
+       <label>Last Name:</label> <input type="text" name="lname" size=15/>
+       <label>Mobile #:</label> <input type="text" name="mobile" size=15 />
+       <label>Address: <textarea col=70 rows=1 name="address"></textarea></label>
+      </fieldset>
     
     <!--ORDER DETAILS -->
-        <fieldset>
-          <legend>Order Details</legend>
-          <select name="Quantity" >
+       <fieldset>
+       <legend>Order Details</legend>
+      <select name="Quantity" >
       <option >Select Quantity</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
       <option value="3">3</option>
       <option value="4">4</option>
       <option value="5">5</option>
@@ -52,16 +50,90 @@
       <option value="8">8</option>
       <option value="9">9</option>
       <option value="10">10</option>
-          </select>
+      </select>
      <label>Delivery Date:</label><input type="date" name="date" />
       <label>Delivery Time:</label><input type="time" name="time" />
        <select name="payment">
-            <option>Select Payment Option</option>
-            <option value="1">Bank Transfer</option>
-            <option value="2">Cash on Delivery</option>
-          </select>
+      <option>Select Payment Option</option>
+      <option value="1">Bank Transfer</option>
+      <option value="2">Cash on Delivery</option>
+      </select>
+      </fieldset>
+
+        <!--Foods-->
+         <fieldset>
+         <legend>Foods</legend>
+
+         <!--Salad-->
+         <fieldset>
+          <legend>Salad</legend>
+            <input type="checkbox" name="Salad" value="1" /> Green Salad
+            <input type="checkbox" name="Salad" value="2" /> Chicken Salad
+            <input type="checkbox" name="Salad" value="3" /> Caprese Salad
+          </fieldset>
+
+          <!--Soup-->
+          <fieldset>
+            <legend>Soup</legend>
+              <input type="checkbox" name="Salad" value="1" /> Broccoli Soup
+           <input type="checkbox" name="Salad" value="2" /> Carrot Soup
+              <input type="checkbox" name="Salad" value="3" /> Chicken Soup
+              <input type="checkbox" name="Salad" value="4" /> Cream of Mushroom Soup
+              <input type="checkbox" name="Salad" value="5" /> Minestone Soup
+              <input type="checkbox" name="Salad" value="6" /> Tomatoes Soup
+            </fieldset>
+
+            <!--Breakfast-->
+            <fieldset>
+              <legend>Breakfast </legend>
+                <input type="checkbox" name="Breakfast " value="1" /> Breakfast 1
+                <input type="checkbox" name="Breakfast " value="2" /> Breakfast 2
+                <input type="checkbox" name="Breakfast " value="3" /> Breakfast 3
+                <input type="checkbox" name="Breakfast " value="4" /> Breakfast 4
+              </fieldset>
+
+              <!--Pizza-->
+              <fieldset>
+                <legend>Pizza</legend>
+                 <input type="checkbox" name="Pizza " value="1" /> Barbeque Chicken Pizza
+              <input type="checkbox" name="Pizza " value="2" /> Garlic Chicken Pizza
+               <input type="checkbox" name="Pizza " value="3" /> House Pizza
+                <input type="checkbox" name="Pizza " value="4" /> Pepperoni Pizza
+             <input type="checkbox" name="Pizza " value="5" /> Pizza margherita
+              <input type="checkbox" name="Pizza " value="6" /> Vegetable Pizza
+               </fieldset>
+
+                <!--Traditional albanian foods-->
+                <fieldset>
+                  <legend>Traditional albanian foods </legend>
+                    <input type="checkbox" name="Traditional albanian foods " value="1" /> Byrek me mish
+                    <input type="checkbox" name="Traditional albanian foods " value="2" /> Fli
+                    <input type="checkbox" name="Traditional albanian foods " value="3" /> Jahnia
+                    <input type="checkbox" name="Traditional albanian foods " value="4" /> Përshesh me Pulë
+                    <input type="checkbox" name="Traditional albanian foods " value="5" /> Pogaqe me kos
+                    <input type="checkbox" name="Traditional albanian foods " value="6" /> Speca të mbushur
+                    <input type="checkbox" name="Traditional albanian foods " value="7" /> Tav Kosi
+                  </fieldset>
+
+                  <!--Meal-->
+                  <fieldset>
+                    <legend>Meal</legend>
+                      <input type="checkbox" name="Meal " value="1" /> Meal 1
+                      <input type="checkbox" name="Meal " value="2" /> Meal 2
+                      <input type="checkbox" name="Meal " value="3" /> Meal 3 
+                      <input type="checkbox" name="Meal " value="4" /> Meal 4
+                      <input type="checkbox" name="Meal " value="5" /> Meal 5
+                    <input type="checkbox" name="Meal " value="6" /> Meal 6
+                    <input type="checkbox" name="Meal " value="7" /> Meal 7
+                      <input type="checkbox" name="Meal " value="8" /> Meal 8
+                      <input type="checkbox" name="Meal " value="9" /> Meal 9
+                      <input type="checkbox" name="Meal " value="10" /> Meal 10
+                  </fieldset>
         </fieldset>
-        
+  
+      <!--Drinks-->
+      <fieldset>
+      <legend>Drinks</legend>
     <!--Soft drinks -->
         <fieldset>
           <legend>Soft drinks</legend>
@@ -104,7 +176,36 @@
             <option value="1">Savannah</option>
           </select>
     </fieldset>
-    
+
+    <!--Spirits -->
+    <fieldset>
+      <legend>Spirits</legend>
+      <input type="checkbox" name="Spirits" value="1" />
+      <select name="Whiskey">
+      <option>Whiskey </option>
+        <option value="1">J&B</option>
+        <option value="2">Bells</option>
+      </select>
+      <input type="checkbox" name="Spirits" value="2" />
+      <select name="Brandy">
+      <option>Brandy </option>
+        <option value="1">Klipdrift</option>
+        <option value="2">Wellington</option>
+      </select>
+      <input type="checkbox" name="Spirits" value="3" />
+      <select name="White spirits">
+      <option>White spirits </option>
+        <option value="1">Gin</option>
+        <option value="2">Vodka</option>
+      </select>
+      <input type="checkbox" name="Spirits" value="4" />
+      <select name="Rum">
+      <option>Rum </option>
+        <option value="1">Southern Comfort, Campari</option>
+        <option value="2">Campari</option>
+      </select>
+    </fieldset>
+
     <!--Wines -->
     <fieldset>
           <legend>Wines</legend>
@@ -131,35 +232,8 @@
           </select>
         </fieldset>
 
-
-        <!--Spirits -->
-        <fieldset>
-          <legend>Spirits</legend>
-          <input type="checkbox" name="Spirits" value="1" />
-          <select name="Whiskey">
-          <option>Whiskey </option>
-            <option value="1">J&B</option>
-            <option value="2">Bells</option>
-          </select>
-          <input type="checkbox" name="Spirits" value="2" />
-          <select name="Brandy">
-          <option>Brandy </option>
-            <option value="1">Klipdrift</option>
-            <option value="2">Wellington</option>
-          </select>
-          <input type="checkbox" name="Spirits" value="3" />
-          <select name="White spirits">
-          <option>White spirits </option>
-            <option value="1">Gin</option>
-            <option value="2">Vodka</option>
-          </select>
-          <input type="checkbox" name="Spirits" value="4" />
-          <select name="Rum">
-          <option>Rum </option>
-            <option value="1">Southern Comfort, Campari</option>
-            <option value="2">Campari</option>
-          </select>
-        </fieldset>
+      </fieldset>
+    
       
       <!--Desserts -->
       
@@ -167,18 +241,18 @@
           <legend>Desserts</legend>
             <input type="checkbox" name="Desserts" value="1" /> Mango Cheescake
             <input type="checkbox" name="Desserts" value="2" /> Banoffee Cheescake
-            <input type="checkbox" name="Desserts" value="4" /> Vegan Cheescake
-            <input type="checkbox" name="Desserts" value="5" /> Chocolate Cheescake
-            <input type="checkbox" name="Desserts" value="6" /> Lampone Pavlova
-            <input type="checkbox" name="Desserts" value="7" /> Crêpes
-            <input type="checkbox" name="Desserts" value="8" /> Pancakes
-            <input type="checkbox" name="Desserts" value="9" /> Pumpkin Spice Waffles
-            <input type="checkbox" name="Desserts" value="10" />Coffe Crème Brûlèe
-            <input type="checkbox" name="Desserts" value="11" />Chocolate tart
-            <input type="checkbox" name="Desserts" value="12" />Chocolate Fondant
-            <input type="checkbox" name="Desserts" value="13" />Chocolate Truffles
-            <input type="checkbox" name="Desserts" value="14" />Petit Fours
-            <input type="checkbox" name="Desserts" value="15" />Lemon Madeleines
+            <input type="checkbox" name="Desserts" value="3" /> Vegan Cheescake
+            <input type="checkbox" name="Desserts" value="4" /> Chocolate Cheescake
+            <input type="checkbox" name="Desserts" value="5" /> Lampone Pavlova
+            <input type="checkbox" name="Desserts" value="6" /> Crêpes
+            <input type="checkbox" name="Desserts" value="7" /> Pancakes
+            <input type="checkbox" name="Desserts" value="8" /> Pumpkin Spice Waffles
+            <input type="checkbox" name="Desserts" value="9" />Coffe Crème Brûlèe
+            <input type="checkbox" name="Desserts" value="10" />Chocolate tart
+            <input type="checkbox" name="Desserts" value="11" />Chocolate Fondant
+            <input type="checkbox" name="Desserts" value="12" />Chocolate Truffles
+            <input type="checkbox" name="Desserts" value="13" />Petit Fours
+            <input type="checkbox" name="Desserts" value="14" />Lemon Madeleines
           
         </fieldset>
     
@@ -194,12 +268,8 @@
         <input type="submit" value="PLACE YOUR ORDER" />
         <input type="reset" value="START OVER" />
       </div>
-      
-       
-    
-  </form>
-  
+    </form>
 </body>
-
 </html>
+
 
