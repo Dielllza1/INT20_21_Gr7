@@ -9,27 +9,26 @@
  
      <!-- Site Metas -->
     <title>Live Dinner Restaurant - Responsive HTML5 Template</title>  
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="keywords" content="Wine Bar, West Village brunch, West Village lunch, Vegetables, Cocktails, West Village">
+    <meta name="description" content="Nostalgic Kosovo café and wine bar in the Balkan with seasonal European-American cuisine, classic cocktails, cozy setting, open every day.">
+    <meta name="author" content="Grupi i 7-te">
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">    
 	<!-- Site CSS -->
-    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/style.css"> 
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
 
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  
 
 </head>
 
@@ -57,22 +56,11 @@
 							</div>
 						</li>
 				
+						
 						<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Pages</a>
-							<div class="dropdown-menu" aria-labelledby="dropdown-a">
-								<a class="dropdown-item" href="reservation.html">Reservation</a>
-								<a class="dropdown-item" href="stuff.html">Stuff</a>
-								<a class="dropdown-item" href="gallery.html">Gallery</a>
-							</div>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Blog</a>
-							<div class="dropdown-menu" aria-labelledby="dropdown-a">
-								<a class="dropdown-item" href="blog.html">blog</a>
-								<a class="dropdown-item" href="blog-details.html">blog Single</a>
-							</div>
-						</li>
+						<li class="nav-item"><a class="nav-link" href="reservation.html">Reservation</a></li>
+						<li class="nav-item"><a class="nav-link" href="staff.html">Staff</a></li>
+						<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
 						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 					</ul>
 				</div>
@@ -94,12 +82,12 @@
 	<!-- End All Pages -->
 	
 	<!-- Start Menu -->
-	<div class="menu-box">
+	<div class="menu-box" data-aos="fade-right" data-aos-duration="3000">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<div class="heading-title text-center">
-						<h2>Special Menu</h2>
+				<div class="heading-title text-center">
+						<h2>Special Menu <i class="fa fa-cutlery"></i></h2>
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
 					</div>
 				</div>
@@ -112,7 +100,9 @@
 					</div>
 				</div>
 				
-				
+				div class="col-9">
+					<div class="tab-content" id="v-pills-tabContent">
+						<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
 							<div class="row">
 								<div class="col-lg-4 col-md-6 special-grid drinks">
 									<div class="gallery-single fix">
@@ -213,12 +203,18 @@
 									</div>
 								</div>
 							</div>
-							
+									</div>	
+					</div>
+				</div>
+			</div>
+		</div>
 						
 	<!-- End Menu -->
 	
 	<!-- Start QT -->
-	<div class="qt-box qt-background">
+	<div class="qt-box qt-background" data-aos="fade-down"
+	data-aos-easing="linear"
+	data-aos-duration="1500">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 ml-auto mr-auto text-center">
@@ -324,60 +320,46 @@
 	<!-- End Contact info -->
 	
 	<!-- Start Footer -->
-	<footer class="footer-area bg-f">
+<footer class="footer-area bg-f">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-6" style="margin-right: 100px;">
+				<h3>About Us</h3>
+				<p>Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida lorem ac, semper magna. Aenean rhoncus ac lectus a interdum. Vivamus semper posuere dui.</p>
+
+			</div>
+		
+			<div class="col-lg-3 col-md-6" style="margin-right: 100px;">
+				<h3>Contact information</h3>
+				<address class="lead">Ipsum Street, Lorem Tower, MO, Columbia, 508000</address>
+				<address class="lead">+01 2000 800 9999</address>
+				<address><a href="mailto:info@admin.com"> info@admin.com</a></address>
+				<ul class="list-inline f-social">
+					<li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						</ul>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<h3>Opening hours</h3>
+				<p><span class="text-color">Monday: </span>Closed</p>
+				<p><span class="text-color">Tue-Wed :</span> 9:AM - 10PM</p>
+				<p><span class="text-color">Thu-Fri :</span> 9:AM - 10PM</p>
+				<p><span class="text-color">Sat-Sun :</span> 5:PM - 10PM</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="copyright">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3 col-md-6">
-					<h3>About Us</h3>
-					<p>Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida lorem ac, semper magna. Aenean rhoncus ac lectus a interdum. Vivamus semper posuere dui.</p>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<h3>Subscribe</h3>
-					<div class="subscribe_form">
-						<form class="subscribe_form">
-							<input name="EMAIL" id="subs-email" class="form_input" placeholder="Email Address..." type="email">
-							<button type="submit" class="submit">SUBSCRIBE</button>
-							<div class="clearfix"></div>
-						</form>
-					</div>
-					<ul class="list-inline f-social">
-						<li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-						<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-						<li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-						<li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-					</ul>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<h3>Contact information</h3>
-					<p class="lead">Ipsum Street, Lorem Tower, MO, Columbia, 508000</p>
-					<p class="lead"><a href="#">+01 2000 800 9999</a></p>
-					<p><a href="#"> info@admin.com</a></p>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<h3>Opening hours</h3>
-					<p><span class="text-color">Monday: </span>Closed</p>
-					<p><span class="text-color">Tue-Wed :</span> 9:Am - 10PM</p>
-					<p><span class="text-color">Thu-Fri :</span> 9:Am - 10PM</p>
-					<p><span class="text-color">Sat-Sun :</span> 5:PM - 10PM</p>
+				<div class="col-lg-12">
+					<p class="company-name">All Rights Reserved. &copy; 2020||2021 <a href="index.html">Live Dinner Restaurant</a></p>
 				</div>
 			</div>
-		</div>
-		
-		<div class="copyright">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<p class="company-name">All Rights Reserved. &copy; 2020||2021 <a href="#">Live Dinner Restaurant</a> Design By : 
-					<a href="https://www.youtube.com/channel/UCNarH1np0G_w1ITLwxg3lVg">
-						عالم الويب.كوم</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-	</footer>
-	<!-- End Footer -->
+		 </div>
+	</div>
+	
+</footer>
+<!-- End Footer -->
 	
 	<a href="#" id="back-to-top" title="Back to top" style="display: none;"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
 
@@ -393,5 +375,9 @@
 	<script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>
     <script src="js/custom.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	  </script>
 </body>
 </html>
