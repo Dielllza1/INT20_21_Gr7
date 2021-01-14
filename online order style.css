@@ -1,0 +1,43 @@
+body{
+    background-color: #866f82;
+     
+}
+#PersonalInformation{
+    background-color:#ecc7c0;
+    border-style: groove;
+    border-width: 8px;
+}
+#OrderDetails{
+    background-color:#ecc7c0;
+   border-style: groove;
+   border-width: 8px;
+
+}
+#foods {
+    background-color:#ecc7c0;
+    border-style: groove;
+    border-width: 8px;
+   
+}
+#drinks {
+    background-color: #ecc7c0;
+    border-style: groove;
+    border-width: 8px;
+
+}
+#desserts {
+    background-color: #ecc7c0;
+    border-style: groove;
+    border-width: 8px;
+}
+#SpecialInstructions {
+    background-color: #ecc7c0;
+    border-style: groove;
+    border-width: 8px;
+
+}
+#buttons{
+    background-color: #ecc7c0;
+    border-style: groove;
+    border-width: 8px;
+}
