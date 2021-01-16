@@ -10,3 +10,7 @@
 	.navbar-light .navbar-brand{
 		margin-left: 15px;
 	}
+.navbar-light .navbar-toggler{
+		margin-right: 15px;
+		border-radius: 0px;
+	}
