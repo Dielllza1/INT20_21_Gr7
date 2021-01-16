@@ -1,0 +1,618 @@
+/*------------------------------------------------------------------
+    IMPORT FONTS
+-------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900');
+
+/*------------------------------------------------------------------
+    IMPORT FILES
+-------------------------------------------------------------------*/
+
+@import url(animate.css);
+@import url(font-awesome.min.css);
+@import url(superslides.css);
+@import url(baguetteBox.min.css);
+
+/*------------------------------------------------------------------
+    SKELETON
+-------------------------------------------------------------------*/
+
+body {
+    color: #666666;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    line-height: 1.80857;
+}
+
+a {
+    color: white;
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0;
+    font-weight: normal;
+    position: relative;
+    padding: 0 0 10px 0;
+    font-weight: normal;
+    line-height: 120% !important;
+    color: #1f1f1f;
+    margin: 0;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 22px
+}
+
+h3 {
+    font-size: 18px
+}
+
+h4 {
+    font-size: 16px
+}
+
+h5 {
+    font-size: 14px
+}
+
+h6 {
+    font-size: 13px
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: #212121;
+    text-decoration: none!important;
+    opacity: 1;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+    opacity: .8;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    outline: none;
+}
+
+a,
+.btn {
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-custom {
+    margin-top: 20px;
+    background-color: transparent !important;
+    border: 2px solid #ddd;
+    padding: 12px 40px;
+    font-size: 16px;
+}
+
+.lead {
+    font-size: 18px;
+    font-style: oblique;
+    line-height: 30px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+blockquote {
+    margin: 20px 0 20px;
+    padding: 30px;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.form-control::-moz-placeholder {
+    color: #2a2a2a;
+    opacity: 1;
+}
+
+
+/*------------------------------------------------------------------
+    LOADER 
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+    HEADER
+-------------------------------------------------------------------*/
+
+.top-navbar {
+    position: relative;
+    z-index: 10;
+}
+
+.top-navbar .navbar {
+    padding: 15px 0px;
+    position: fixed;
+    width: 100%;
+    border-radius: 0px 0px 100px 100px;
+    transition: height .3s ease-out, background .3s ease-out, box-shadow .3s ease-out;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+    z-index: 100;
+}
+
+.top-navbar .navbar-light .navbar-nav .nav-link {
+    color: #010101;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.top-navbar .navbar-light .navbar-nav .nav-item .nav-link:hover {
+    background: #0b5804;
+    color: #ffffff;
+}
+
+.top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link {
+    background: #0b5804;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    border: none;
+    border-radius: 0px;
+    padding: 10px;
+    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu a {
+    padding: 10px 10px;
+    text-transform: uppercase;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu a.dropdown-item:hover {
+    background: #0b5804;
+    color: #ffffff;
+}
+
+.navbar-light .navbar-toggler:hover {
+    background: #0b5804;
+}
+
+
+/*------------------------------------------------------------------
+    Slider
+-------------------------------------------------------------------*/
+
+.cover-slides {
+    height: 100vh;
+}
+
+.slides-navigation a {
+    background: #0b5804;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 50%;
+    font-size: 20px;
+    display: block;
+    color: #fff;
+    border-radius: 4px;
+    line-height: 63px;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+
+.slides-navigation a i {
+    font-size: 40px;
+}
+
+.slides-navigation a:hover {
+    background: #010101;
+}
+
+.cover-slides .container {
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.cover-slides .container>.row {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.cover-slides .container>.row {
+    height: 100%;
+}
+
+.overlay-background {
+    background: #333;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+}
+
+.cover-slides h1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 64px;
+    color: #fff;
+}
+
+.cover-slides p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.slides-pagination a {
+    border: 2px solid #ffffff;
+}
+
+.slides-pagination a.current {
+    background: #0b5804;
+    border: 2px solid #0b5804;
+}
+
+
+/*------------------------------------------------------------------
+    Effect
+-------------------------------------------------------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 600px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: #ffffff;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+    stroke: #d65106;
+    animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+    stroke: #d65106;
+    animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+    stroke: #000000;
+    animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+    stroke: #000000;
+    animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+    stroke: #d82b2b;
+    animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+    100% {
+        stroke-dashoffset: -35%;
+    }
+}
+
+
+/*------------------------------------------------------------------
+    About
+-------------------------------------------------------------------*/
+
+.about-section-box {
+    padding: 70px 0px;
+    background: #ffffff no-repeat bottom center;
+    background-size: cover;
+}
+
+.about-section-box .img-fluid {
+    padding: 5px;
+    box-shadow: 2px 14px 24px #0b5804;
+}
+
+.imgfluid:hover {
+    transform: perspective(500px) scale3d(1, 1, 1)rotateY(-20deg);
+}
+
+.btn {
+    text-transform: uppercase;
+    padding: 19px 36px;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 2px solid transparent;
+    padding: 12px 30px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: .1875rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-outline-new-white {
+    color: #fff;
+    background-color: #0b5804;
+    background-image: none;
+    border-color: #0b5804;
+}
+
+.btn-outline-new-white:hover {
+    color: #ffffff;
+    background-color: #333333;
+    border-color: #333333;
+}
+
+.inner-column {
+    text-align: left;
+}
+
+.inner-column1 {
+    text-align: left;
+    margin-left: 60px;
+}
+
+.inner-column h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    color: #010101;
+    font-weight: 500;
+}
+
+.inner-column1 h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    color: #010101;
+    font-weight: 500;
+}
+
+.inner-column h1 span {
+    color: #0b5804;
+}
+
+.inner-column h4 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.inner-column p {
+    font-size: 18px;
+    color: #222222;
+}
+
+.inner-column1 p {
+    font-size: 18px;
+    color: #222222;
+}
+
+.inner-column .btn-outline-new-white {
+    color: #fff;
+}
+
+.inner-column .btn-outline-new-white:hover {
+    color: #ffffff;
+}
+
+.animation {
+    animation-duration: 5s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: #0b5804;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 0em;
+    margin-bottom: 10px;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.mult_col {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #333;
+    padding: 2em;
+    margin-top: 50px;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    column-width: 300px;
+    column-gap: 3em;
+    column-rule: 1px solid #0b5804;
+    column-span: all;
+}
+
+
+/*------------------------------------------------------------------
+    QT
+-------------------------------------------------------------------*/
+
+.qt-background {
+    background: url(../images/qt-bg.jpg) no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    background-attachment: fixed;
+    background-position: center center;
+    position: relative;
+}
+
+.qt-background p {
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 44px;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 20px;
+}
+
+.qt-background span {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+
+/*------------------------------------------------------------------
+    Menu
+-------------------------------------------------------------------*/
+
+.menu-box {
+    padding: 70px 0px;
+}
+
+.heading-title {
+    margin-bottom: 50px;
+}
+
+.heading-title h2 {
+    color: #010101;
+    font-size: 28px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+.heading-title p {
+    font-size: 18px;
+    font-weight: 200;
+    margin: 0px;
+}
+
+.inner-menu-box .nav-pills .nav-link.active {
+    background: #0b5804;
+    color: #ffffff;
+}
+
+.inner-menu-box .nav-pills .nav-link {
+    font-size: 18px;
+    color: #666666;
+}
+
+.inner-menu-box .nav-pills .nav-link:hover {
+    background: #0b5804;
+    color: #ffffff;
+}
+
+.gallery-single {
+    margin-bottom: 30px;
+}
+
+.gallery-single {
+    position: relative;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.why-text {
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    right: 0;
+    height: 100%;
+    background: rgba(207, 166, 113, 0.9);
+    padding: 12px 12px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.why-text h4 {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+}
+
+.why-text p {
+    color: #ffffff;
+    font-size: 13px;
+    border-bottom: 1px dashed #010101;
+    margin: 0px;
+    padding-bottom: 15px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.why-text h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.gallery-single:hover .why-text {
+    bottom: 0px;
+}
