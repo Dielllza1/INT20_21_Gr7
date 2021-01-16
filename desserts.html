@@ -6,22 +6,26 @@
 	<!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Site Metas -->
-    <title>Live Dinner Restaurant - Responsive HTML5 Template</title>  
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>Food House Restaurant| A cozy, nostalgic Kosovo café and wine bar in Kosovo, KS </title>  
+	 <meta name="keywords" content="Wine Bar, West Village brunch, West Village lunch, Vegetables, Cocktails, West Village">
+	 <meta name="description" content="Nostalgic Kosovo café and wine bar in the Balkan with seasonal European-American cuisine, classic cocktails, cozy setting, open every day.">
+	 <meta name="author" content="">
 	 <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
  <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">    
 	<!-- Site CSS -->
-    <link rel="stylesheet" href="css/style.css">    
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="css/responsive.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
-	</head>
+ <link rel="stylesheet" href="css/style.css"> 
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+ <link href="css/baguetteBox.min.css" rel="stylesheet">
+ <link href="css/superslides.css" rel="stylesheet">
+ <link href="css/animate.css" rel="stylesheet">
+ <!-- Responsive CSS -->
+ <link rel="stylesheet" href="css/responsive.css">
+
+</head>
 	
 	<body>
 	<!-- Start header -->
@@ -46,22 +50,11 @@
 								<a class="dropdown-item" href="desserts.html">Desserts</a>
 							</div>
 						</li>
+			<li class="nav-item"><a class="nav-link" href="online_order.html">Online Order</a></li>
 						<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Pages</a>
-							<div class="dropdown-menu" aria-labelledby="dropdown-a">
-								<a class="dropdown-item" href="reservation.html">Reservation</a>
-								<a class="dropdown-item" href="stuff.html">Stuff</a>
-								<a class="dropdown-item" href="gallery.html">Gallery</a>
-							</div>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Blog</a>
-							<div class="dropdown-menu" aria-labelledby="dropdown-a">
-								<a class="dropdown-item" href="blog.html">blog</a>
-								<a class="dropdown-item" href="blog-details.html">blog Single</a>
-							</div>
-						</li>
+                        <li class="nav-item"><a class="nav-link" href="reservation.html">Reservation</a></li>
+						<li class="nav-item"><a class="nav-link" href="staff.html">Staff</a></li>
+						<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
 						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 					</ul>
 				</div>
@@ -82,34 +75,36 @@
 	</div>
 	<!-- End Desserts -->
 	
-		<!-- Start Menu -->
+	<!-- Start Menu -->
 	<div class="desserts-box">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="heading-title text-center">
                         <h2>
-                        <p style = "font-family:georgia,garamond,serif;font-size:45px;font-style:italic;">
-                            Desserts
+							<br>
+                        <p>
                          </p>
                          </h2>
 					</div>
 				</div>
 			</div>
-			
-			<div class="row inner-menu-box">
+		    <div class="row inner-menu-box">
 				<div class="col-3">
 					<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-						
+						<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Desserts</a>
 					</div>
 				</div>
-				
-				<div class="col-lg-4 col-md-6 special-grid desserts">
-                    <div class="gallery-single fix">
-                        <img src="images/mango.jpg" class="img-fluid" alt="Image">
-                        <div class="why-text">
-                            <h4>Mango Cheesecake</h4>
-                            <p>Mango and Passion fruit sauce</p>
+			<div class="col-9">
+				<div class="tab-content" id="v-pills-tabContent">
+					<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+						<div class="row">
+							<div class="col-lg-4 col-md-6 special-grid desserts">
+								<div class="gallery-single fix">
+									<img src="images/mango.jpg" class="img-fluid" alt="Image">
+                                <div class="why-text">
+                                <h4>Mango Cheesecake</h4>
+                                <p>Mango and Passion fruit sauce</p>
                             <h5> $4</h5>
                         </div>
                     </div>
@@ -325,7 +320,11 @@
             </div>
         </div>
     </div>
-    <!-- End Customer Reviews -->		
+    <!-- End Customer Reviews -->	
+							<!--<p>
+		latitude:<span id="latitude"></span>&deg;<br>
+		longitude:<span id="longitude"></span>&deg;
+	</p>-->
 				
 				<!-- Start Contact info -->
     <div class="contact-imfo-box">
@@ -354,7 +353,7 @@
                     <div class="overflow-hidden">
                         <h4>Location</h4>
                         <address class="lead">
-							Prishtina
+							Prishtina KS
 					</address>
                     </div>
                 </div>
@@ -374,14 +373,15 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6" style="margin-right: 100px;">
-                    <h3>Contact information</h3>
-                    <address class="lead">Prishtina , 10000</address>
-                    <address class="lead">+383-49-001-001</address>
-                    <address><a href="Food.House@gmail.com"> Food.House@gmail.com</a></address>
-                    <ul class="list-inline f-social">
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
+					<h3>Contact information</h3>
+					<address class="lead">Prishtina , 10000</address>
+					<address class="lead">+383-49-001-001</address>
+					<address><a href="mailto:Foodhouse113@gmail.com">Foodhouse113@gmail.com </a></address>
+					<ul class="list-inline f-social">
+						<li class="list-inline-item"><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Ffood.house2021%2F%3Ffbclid%3DIwAR0wkBllp5izksEj4fPQYR-xV0qo8wrGH3ENQ2FiW6tAGugikeXNBio7IYo&h=AT3APLLmE7NeOzpKFRYyPHxnkGCxeJ63YQu144Mpcfc3srPpmnF3iKg43a0VqtqX7j6HtG5OULuSZcRWyYXLFs6DkiFesE-qQkfv7_HjxkmPT_TTT-0hEUalSR8GPW7nXZn-5LJwVGg"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							</ul>
+				</div>
+		    
                 <div class="col-lg-3 col-md-6">
                     <h3>Opening hours</h3>
                     <p><span class="text-color">Mon-Tue: </span>9AM-11PM</p>
@@ -406,19 +406,23 @@
     <!-- End Footer -->
 	<a href="#" id="back-to-top" title="Back to top" style="display: none;"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
 
-		<!-- ALL JS FILES -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-    <!-- ALL PLUGINS -->
-	<script src="js/jquery.superslides.min.js"></script>
-	<script src="js/images-loded.min.js"></script>
-	<script src="js/isotope.min.js"></script>
-	<script src="js/baguetteBox.min.js"></script>
-	<script src="js/form-validator.min.js"></script>
-    <script src="js/contact-form-script.js"></script>
-    <script src="js/custom.js"></script>
+	<!-- ALL JS FILES -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<!--<script src="js/popper.min.js"></script>-->
+<script src="js/bootstrap.min.js"></script>
+<!-- ALL PLUGINS -->
+<script src="js/jquery.superslides.min.js"></script>
+<script src="js/images-loded.min.js"></script>
+<script src="js/isotope.min.js"></script>
+<script src="js/baguetteBox.min.js"></script>
+<script src="js/form-validator.min.js"></script>
+<script src="js/contact-form-script.js"></script>
+<script src="js/custom.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	AOS.init();
+</script>
+<script src="js/colors.js"></script>
 </body>
 </html>
- 
  
